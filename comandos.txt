@@ -31,3 +31,13 @@ git branch add-comandos
 git switch add-comandos
 
 # Arquivo comandos.txt criado e editado com cat <<EOF
+
+git add comandos.txt
+git commit -m "Arquivo comandos.txt adicionado na branch add-comandos"
+
+git remote add origin-atividade https://github.com/jessicamelooliveira/curso-git-ead-ifrn.git
+git push -u origin-atividade main
+git push -u origin-atividade add-comandos
+
+# Pull Request feito no GitHub
+# Adição dos últimos comandos após a criação do comandos.txt (linha 33) no arquivo comandos.txt
