@@ -1,0 +1,33 @@
+Jéssica de Melo Oliveira
+
+mkdir curso-git-ead-ifrn
+cd curso-git-ead-ifrn/
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead.git
+cd curso-branchs-ifrn-ead
+
+echo "Esse é o arquivo texto.txt (Edição na branch main)" > texto.txt
+git add texto.txt
+git commit -m "Primeiro commit: Arquivo texto.txt adicionado"
+
+git branch feature-1
+git switch feature-1
+echo "Esse é o arquivo texto.txt (Edição na branch feature-1)" > texto.txt
+git add texto.txt
+git commit -m "Arquivo texto.txt modificado na branch feature-1"
+
+git checkout main
+echo "Linha modificada na main" > texto.txt
+git add texto.txt
+git commit -m "Arquivo texto.txt modificado na branch main"
+
+git merge feature-1
+
+# Resolvendo o conflito manualmente no editor de texto.
+
+git add texto.txt
+git commit -m "Conflito resolvido manualmente. Merge entre main e feature-1"
+
+git branch add-comandos
+git switch add-comandos
+
+# Arquivo comandos.txt criado e editado com cat <<EOF
