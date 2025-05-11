@@ -1,1 +1,1 @@
-Linha modificada na main
+Conflito resolvido manualmente no Editor de Texto local.
